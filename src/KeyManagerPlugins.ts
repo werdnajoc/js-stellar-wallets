@@ -1,3 +1,4 @@
+import { AsyncStorageFacade } from "./plugins/AsyncStorageFacade";
 import { IdentityEncrypter } from "./plugins/IdentityEncrypter";
 import { LocalStorageKeyStore } from "./plugins/LocalStorageKeyStore";
 import { MemoryKeyStore } from "./plugins/MemoryKeyStore";
@@ -8,4 +9,5 @@ export const KeyManagerPlugins: any = {
   MemoryKeyStore,
   LocalStorageKeyStore,
   ScryptEncrypter,
+  AsyncStorageFacade,
 };
